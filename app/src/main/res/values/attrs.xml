@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconView">
+        <attr name="reaction" format="enum">
+            <enum name="like" value="0"/>
+            <enum name="love" value="1"/>
+            <enum name="laugh" value="2"/>
+            <enum name="wow" value="3"/>
+            <enum name="sad" value="4"/>
+            <enum name="angry" value="5"/>
+        </attr>
+    </declare-styleable>
+</resources>

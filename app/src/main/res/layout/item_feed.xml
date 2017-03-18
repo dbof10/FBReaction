@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clPost"
+    android:layout_marginBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/ic_avatar"/>
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/feed_user_name"
+      android:textSize="14sp"
+      android:textStyle="bold"
+      android:textColor="@android:color/black"
+      app:layout_constraintLeft_toRightOf="@+id/imageView"
+      app:layout_constraintTop_toTopOf="parent"/>
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:text="Hoa hồng đẹp quá!!!"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+  <LinearLayout
+      android:id="@+id/llFeedInfo"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:orientation="vertical"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/ivBadgeLike"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:src="@drawable/ic_badge_like"/>
+    </FrameLayout>
+
+    <View
+        android:layout_marginTop="4dp"
+        style="@style/Divider"/>
+
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"
+      android:baselineAligned="false"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/llFeedInfo">
+
+    <LinearLayout
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:id="@+id/btLike"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:gravity="center">
+
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:adjustViewBounds="true"
+          android:src="@drawable/ic_like"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginStart="8dp"
+          android:text="Like"
+          android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:id="@+id/btComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:gravity="center">
+
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:adjustViewBounds="true"
+          android:src="@drawable/ic_comment"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginStart="8dp"
+          android:text="Comment"
+          android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:id="@+id/btShare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:gravity="center">
+
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:adjustViewBounds="true"
+          android:src="@drawable/ic_share"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginStart="8dp"
+          android:text="Share"
+          android:textStyle="bold"/>
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="0dp"
+      android:layout_height="232dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_post"/>
+  </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

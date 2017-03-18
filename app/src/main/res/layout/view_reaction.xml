@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <RelativeLayout
+      android:clipToPadding="false"
+      android:layout_width="260dp"
+      android:layout_height="260dp"
+      android:clipChildren="false">
+
+
+    <com.ctech.reaction.widget.RoundedBackgroundView
+        android:clipChildren="false"
+        android:alpha="0.2"
+        android:id="@+id/vRoundedBackground"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:elevation="5dp"
+        />
+
+    <LinearLayout
+        android:elevation="5dp"
+        android:gravity="bottom"
+        android:id="@+id/llReactContainerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+    >
+
+      <com.ctech.reaction.widget.EmojiView
+          android:id="@+id/rv1"
+          android:adjustViewBounds="true"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="2dp"
+      />
+
+      <com.ctech.reaction.widget.EmojiView
+          android:id="@+id/rv2"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginEnd="2dp"
+          android:layout_marginStart="2dp"
+        />
+
+
+      <com.ctech.reaction.widget.EmojiView
+          android:id="@+id/rv3"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginEnd="2dp"
+          android:layout_marginStart="2dp"/>
+
+
+      <com.ctech.reaction.widget.EmojiView
+          android:id="@+id/rv4"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginEnd="2dp"
+          android:layout_marginStart="2dp"/>
+
+
+      <com.ctech.reaction.widget.EmojiView
+          android:id="@+id/rv5"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginEnd="2dp"
+          android:layout_marginStart="2dp"/>
+
+      <com.ctech.reaction.widget.EmojiView
+          android:id="@+id/rv6"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginEnd="8dp"
+          android:layout_marginStart="2dp"/>
+
+    </LinearLayout>
+
+
+  </RelativeLayout>
+
+</merge>
