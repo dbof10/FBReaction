@@ -32,7 +32,7 @@ public class Emotion {
   static final int LARGE_SIZE = DisplayUtil.dpToPx(72);
 
   private static final int SPACING_TO_LABEL = DisplayUtil.dpToPx(16);
-  private static final int MAX_WIDTH_TITLE = DisplayUtil.dpToPx(64);
+  private static final int MAX_WIDTH_TITLE = DisplayUtil.dpToPx(56);
 
   int size = 0;
 
@@ -121,7 +121,7 @@ public class Emotion {
 
     if (width <= 0) return;
 
-    setAlphaTitle(Math.min(Constants.MAX_ALPHA * width / MAX_WIDTH_TITLE, Constants.MAX_ALPHA));
+    setAlphaTitle(Constants.MAX_ALPHA * width / MAX_WIDTH_TITLE);
 
     float x = this.x + (size - width) / 2;
     float y = this.y - SPACING_TO_LABEL - height;
