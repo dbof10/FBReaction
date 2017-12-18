@@ -32,5 +32,3 @@ limitations under the License.`
 If you like the work **Facebook reaction** is doing please consider a small donation:
 
 Bitcoin: **1HX42mCUEPui3MJHGiJYfq2B2Gb1Y8DBdb**
-
-![BitCoin](https://www.tordex.com/assets/images/litehtml-bitcoin.png)
