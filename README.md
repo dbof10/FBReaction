@@ -30,5 +30,3 @@ limitations under the License.`
 ## Support project
 
 If you like the work **Facebook reaction** is doing please consider a small donation:
-
-Bitcoin: **1HX42mCUEPui3MJHGiJYfq2B2Gb1Y8DBdb**
